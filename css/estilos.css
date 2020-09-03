@@ -106,3 +106,17 @@ footer .final-footer {
 .py-3 {
   padding-bottom: 1rem !important;
 }
+/* HEADER */
+.header {
+  background: #dcf3f5; 
+  background-position: center;
+  background-size: cover;
+}
+
+.covid {
+  color: rgb(110, 110, 110);
+}
+
+.texto-covid {
+  color: rgb(110, 110, 110);
+}
