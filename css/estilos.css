@@ -130,3 +130,44 @@ footer .final-footer {
 .texto-covid {
   color: rgb(110, 110, 110);
 }
+
+/* BODY - CARD */
+.card-img-filter {
+  filter: brightness(0.5);
+}
+
+.card {
+  transition-duration: 0.6s;
+  clip-path: polygon(50% 0, 100% 0%, 100% 50%, 100% 100%, 50% 100%, 0 100%, 0 50%, 0 0); 
+}
+
+.card-efecto:hover .card {
+  clip-path: polygon(50% 0, 50% 0, 100% 50%, 100% 50%, 50% 100%, 50% 100%, 0 50%, 0 50%); }
+  
+  .card-efecto:hover .card-img-overlay {
+    transform: scale(0.9);
+  }
+
+  .card-img-overlay {
+    transition-duration: 0.6s;
+  }
+
+  /* section comentario */
+
+  .comments {
+    background:  #dcf3f5 ;
+  }
+
+  .comments__img {
+    --tamano: 80px;
+    width: var(--tamano);
+    height: var(--tamano);
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 7px 7px 7px rgba(0 0 0 / 0.5);
+    border: 3px ridge white;
+  }
+
+  .transform-turn {
+    transform: rotate(.5turn);
+  }
