@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 function change (especialidad, medico) {
     especialidad = document.getElementById(especialidad);
     medico = document.getElementById(medico);
@@ -98,4 +96,3 @@ function change2 (medico, horario) {
     };
 }
  
->>>>>>> Stashed changes
