@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./css/bootstrap-4.5.2-dist/bootstrap-4.5.2-dist/cssbootstrap/bootstrap.min.css"
+    />
+    
+    <link rel="stylesheet" href="./registro.css" />
+    <!-- CDN Font awesome -->
+    <!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>formulario de registro</title>
+    
+  </head>
+  <!--inicio formulario de registro-->
+  <body style="background-color: #ceebec;">
+    <script type = "text/javascript" src="./js/app.js"></script>
+  <script type="tex/javascript" src="./js/chosen.jquery.js"></script>
+  <script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+    <div class="container">
+      <div class="row justify-content-center mt-5 pt-5 " >
+        <div class="col-md-7">
+          <h1 class="display-4">Formulario de Registro</h1>
+          <hr class="bg-info">
+          <p class="mb-0 pb-0">Ingresa tus datos para poder crear tu cuenta</p>
+          <p class="text-danger small pt-0 mt-0">*todos los datos son obligatorios</p>
+          <form>
+
+            <div class="row form-group">
+              <label for="apellido" class="col-form-label col-md-4">Apellido:</label>
+              <div class="col-md-8">
+                <input type="text" name="apellido" value="" id="apellido" class="form-control"></input>
+              </div>
+            </div>
+
+          <div class="row form-group">
+            <label for="nombre" class="col-form-label col-md-4">Nombre:</label>
+            <div class="col-md-8">
+              <input type="text" name="nombre" value="" id="nombre" class="form-control"></input>
+            </div>
+          </div>
+          
+          <div class="row form-group">
+            <label for="email" class="col-form-label col-md-4">E-mail:</label>
+            <div class="col-md-8">
+              <input type="email" name="email" value="" id="email" class="form-control" placeholder="ejemplo@ejemplo.com"></input>
+            </div>
+          </div>
+        
+          <div class="row form-group">
+            <label for="contraseña" class="col-form-label col-md-4">Contraseña:</label> 
+            <div class="col-md-8">
+              <input type="password" name="contraseña" value="" id="contraseña" class="form-control"></input>
+              <small id="passwordHelpInline" class="text-muted">
+                La contraseña debe tener entre 8 y 20 caracteres
+              </small>
+            </div>
+          </div>
+
+          <div class="row form-group">
+            <label for="" class="col-form-label col-md-4">Sexo:</label>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+              <label class="form-check-label" for="inlineRadio1">Mujer</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+              <label class="form-check-label" for="inlineRadio2">Hombre</label>
+            </div>
+          </div>
+
+          <div class="row form-group">
+            <label for="inputTelephoneNumber" class="col-form-label col-md-4">Telefono de Contacto:</label>
+            <div class="col-md-8">
+            <input type="text" class="form-control" id="inputTelephoneNumber" placeholder="Ej: 11 6090 0400 (cód de área + núm telefónico)">
+          </div>
+          </div>
+          
+          <div class="row form-group">
+            <label for="inputAddress2" class="col-form-label col-md-4">Domicilio:</label>
+            <div class="col-md-8">
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Calle, Numero, Dpto, Piso">
+          </div>
+        </div>
+         
+
+
+          <div class="form-row">
+            <div class="col-md-6 mb-3">
+              <label for="validationTooltip03">Localidad:</label>
+              <input type="text" class="form-control" id="validationTooltip03" required>
+              <div class="invalid-tooltip">
+                Please provide a valid city.
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="validationTooltip04">Provincia:</label>
+              <select class="custom-select" id="validationTooltip04" required>
+                <option selected disabled value="">Seleccione...</option>
+                <option>Tucuman</option>
+                <option>Salta</option>
+                <option>Santiago</option>
+              </select>
+              <div class="invalid-tooltip">
+                Por favor seleccione una Provincia.
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="validationTooltip05">Codigo Postal:</label>
+              <input type="text" class="form-control" id="validationTooltip05" required>
+              <div class="invalid-tooltip">
+                Please provide a valid zip.
+              </div>
+            </div>
+          </div>
+        
+
+          <div class="row form-group">
+            <label for="mensaje" class="col-form-label col-md-4">Informacion Adicional:</label>
+            <div class="col-md-8">
+              <textarea rows="3" name="contraseña" value="" id="contraseña" class="form-control"></textarea>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-info">Enviar</button>
+          <br>
+          <br>
+          <p>Si ya tenes cuenta hace <a href="./login.html">click aca</a>   !!!</p>
+        
+        </form>
+        </div>
+      </div>
+    </div>
+     <img src="./imagenes/cut-header.svg">
+     
+      
+      
+
+    
+    
+    
+    
+    
+    
+    
+      <!-- fin del formulario de reigistro -->
+    
+    <!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
