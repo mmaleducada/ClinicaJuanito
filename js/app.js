@@ -32,6 +32,7 @@ function change (especialidad, medico) {
     };
 }
 
+
 function change2 (medico, horario) {
     medico = document.getElementById(medico);
     horario = document.getElementById(horario);
