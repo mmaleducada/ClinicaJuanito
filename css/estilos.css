@@ -33,6 +33,15 @@
 .dropdown-menu .dropdown-item {
   color: white;
 }
+
+/*Modal loguin pop-up */
+
+.modal-content{
+  background-color: #0dbcc7;
+  opacity: .8;
+  
+}
+
 /* FOOTER */
 footer .columnas {
   padding: 30px 0;

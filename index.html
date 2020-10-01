@@ -67,15 +67,63 @@
           </ul>
         </div>
         <a
-          id="ingresar"
-          class="nav-item nav-link"
-          href="#"
-          target="_blank"
-          tabindex="-1"
-          aria-disabled="true"
-          ><i class="fas fa-sign-in-alt mr-2"></i>Ingresar/Registrarme
-        </a>
+        id="button"
+        class="btn btn-info"
+        data-toggle="modal"
+        data-target="#exampleModal"
+       
+        tabindex="-1"
+        aria-disabled="false">
+        <i class="fas fa-sign-in-alt mr-2"></i>
+        Ingresar/Registrarme
+    </a>
       </nav>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" 
+aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Logueo</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <!-- inicio del formulario de logueo -->
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Ingrese su casilla de E-mail</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ejemplo@ejemplo.com">
+            <small id="emailHelp" class="form-text text-muted"></small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Contraseña</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+            <small id="passwordHelpInline" class="text-muted">
+              Must be 8-20 characters long.
+            </small>
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Recordar Contraseña</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Ingresar</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <br> <br>    
+                  <p>
+                  Aún no tenes cuenta???
+                  </p>
+                  <a href="./registro.html">Registrate Acá</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- fin del formulario de logueo -->
+
       <!--TEXTO INICIAL-->
       <div class="container">
         <div class="row">
