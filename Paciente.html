@@ -46,32 +46,6 @@
               <span class="sr-only">(current)</span></a
             >
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"
-              ><i class="fas fa-comment-medical mr-2"></i>Contacto</a
-            >
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdownMenuLink"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Pacientes
-            </a>
-            <div
-              class="dropdown-menu"
-              aria-labelledby="navbarDropdownMenuLink"
-            >
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
         </ul>
       </div>
       <a
@@ -86,60 +60,61 @@
     </nav>
   </header>
   <!--TURNOS-->
-  <div class="container">
-    <div class="row">
-      <div class="turnos-solicitados col-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo facilis aliquid qui enim, quibusdam ea harum quam eius deserunt hic est autem error suscipit ullam, pariatur nostrum voluptates perspiciatis sint.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quibusdam harum culpa nemo amet non libero aspernatur ad, voluptate numquam quae facere error dolor eaque itaque distinctio, aperiam veniam impedit!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aliquam perspiciatis voluptas, quia tempore quam, ullam eveniet quis expedita ab laborum facere nobis. Ipsam magni nihil, dolores reiciendis quisquam voluptate?
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium earum dicta reprehenderit natus suscipit, expedita quasi voluptate dolorum eum illo cum aliquid, voluptas molestiae quos, magni quas dolore sed? Porro!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, laborum accusamus, adipisci dolorem fugiat esse ipsum rerum saepe facere aliquid provident tenetur molestias quia quas nesciunt quasi delectus aut veniam?
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit molestiae amet vero eum ratione architecto voluptate voluptates perferendis quasi similique alias, laborum recusandae modi itaque dolore porro nostrum exercitationem veniam.
-      </div>
-      <div class="col-2"></div>
-      <div class="solicitud-turnos col-5">
-        <h3>Solicite su turno aquí</h3>
-        <div class="form-group">
-          <label for="Especialidad">Especialidad</label>                                                 
-              <select name="Especialidad" id="Especialidad"  data-placeholder="- Seleccione Especialidad -"
-               class="form-control chosenEspecialidad" onchange="change(this.id, 'medico')"
-               value="<%= typeof Especialidad != 'undefined' ? Especialidad : '' %>">
-                <option value=""></option>
-                <option value="Cardiología">Cardiología</option>
-                <option value="Dermatología">Dermatología</option>
-                <option value="Medicina General">Medicina General</option>
-                <option value="Neurología">Neurología</option>
-                <option value="Obstetricia y Ginecología">Obstetricia y Ginecología</option>
-                <option value="Oftalmología">Oftalmología</option>
-                <option value="Pediatría">Pediatría</option>
-                <option value="Psiquiatría">Psiquiatría</option>
-                <option value="Urología">Urología</option>
+  <div class="container-fluid background-paciente">
+    <div class="container">
+      <div class="row">
+        <div class="turnos-solicitados col-12 col-sm-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo facilis aliquid qui enim, quibusdam ea harum quam eius deserunt hic est autem error suscipit ullam, pariatur nostrum voluptates perspiciatis sint.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quibusdam harum culpa nemo amet non libero aspernatur ad, voluptate numquam quae facere error dolor eaque itaque distinctio, aperiam veniam impedit!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt aliquam perspiciatis voluptas, quia tempore quam, ullam eveniet quis expedita ab laborum facere nobis. Ipsam magni nihil, dolores reiciendis quisquam voluptate?
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium earum dicta reprehenderit natus suscipit, expedita quasi voluptate dolorum eum illo cum aliquid, voluptas molestiae quos, magni quas dolore sed? Porro!
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, laborum accusamus, adipisci dolorem fugiat esse ipsum rerum saepe facere aliquid provident tenetur molestias quia quas nesciunt quasi delectus aut veniam?
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit molestiae amet vero eum ratione architecto voluptate voluptates perferendis quasi similique alias, laborum recusandae modi itaque dolore porro nostrum exercitationem veniam.
+        </div>
+        <div class="col-2"></div>
+        <div class="solicitud-turnos col-12 col-sm-5">
+          <h3>Solicite su turno aquí</h3>
+          <div class="form-group">
+            <label for="Especialidad">Especialidad</label>                                                 
+                <select name="Especialidad" id="Especialidad"  data-placeholder="- Seleccione Especialidad -"
+                 class="form-control chosenEspecialidad" onchange="change(this.id, 'medico', 'horario')"
+                 value="<%= typeof Especialidad != 'undefined' ? Especialidad : '' %>">
+                  <option value=""></option>
+                  <option value="Cardiología">Cardiología</option>
+                  <option value="Dermatología">Dermatología</option>
+                  <option value="Medicina General">Medicina General</option>
+                  <option value="Neurología">Neurología</option>
+                  <option value="Obstetricia y Ginecología">Obstetricia y Ginecología</option>
+                  <option value="Oftalmología">Oftalmología</option>
+                  <option value="Pediatría">Pediatría</option>
+                  <option value="Psiquiatría">Psiquiatría</option>
+                  <option value="Urología">Urología</option>
+                </select>
+          </div>
+          <div class="form-group">
+            <label for="Medico">Medico</label>
+            <select name="Medico" id="medico"  data-placeholder="- Seleccione Medico -"
+            class="form-control chosenMedico" onchange="change2(this.id, 'horario')"
+            value="<%= typeof Medico!= 'undefined' ? Medico : '' %>">
+                <option value=""></option> 
               </select>
+          </div> 
+          <div class="form-group">
+            <label for="Horario">Horario</label>
+              <select id="horario" name="Horario" data-placeholder="- Seleccione Horario -"
+              class="form-control chosenHorario" value=" <%= typeof Horario != 'undefined' ? Horario : '' %>" >
+                <option value=""></option> 
+              </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Indique el motivo de su consulta</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Solicitar</button> 
         </div>
-        <div class="form-group">
-          <label for="Medico">Medico</label>
-          <select name="Medico" id="medico"  data-placeholder="- Seleccione Medico -"
-          class="form-control chosenMedico" onchange="change2(this.id, 'horario')"
-          value="<%= typeof Medico!= 'undefined' ? Medico : '' %>">
-              <option value=""></option> 
-            </select>
-        </div> 
-        <div class="form-group">
-          <label for="Horario">Horario</label>
-            <select id="horario" name="Horario" data-placeholder="- Seleccione Horario -"
-            class="form-control chosenHorario" value="<%= typeof Horario != 'undefined' ? Horario : '' %>" >
-              <option value=""></option> 
-            </select>
-        </div>
-        <div class="form-group">
-          <label for="exampleFormControlTextarea1">Indique el motivo de su consulta</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-        <button class="btn btn-primary" type="submit">Solicitar</button> 
       </div>
     </div>
   </div>
   <img src="./imagenes/cut-header.svg" alt="" />
-  <img src="./imagenes/cut-header.svg" class="transform-turn">
     <!--INICIO FOOTER-->
     <footer>
         <div class="columnas">
@@ -197,15 +172,15 @@
       </footer>
       <script>
         //chosen Especialidad
-        $('.chosenEspecialidad, .chosenMedico').chosen({no_results_text: "No hay resultados...",allow_single_deselect: true});
-        $(".chosenEspecialidad").chosen().on("change", function(event) { 
+        document.querySelector(".chosenEspecialidad").chosen().on("change", function(event) { 
                             document.getElementById('medico').value = "" ;
-                            $(".chosenMedico").trigger('chosen:updated');                                                                                                     
+                            document.getElementById('horario').value = "" ;
+                            console.log (document.getElementById('medico').value+ " " + document.getElementById('horario').value)
+       document.querySelector(".chosenMedico").trigger('chosen:updated');                                                                                                     
                             });
-       $(".chosenMedico").chosen().on("chosen:showing_dropdown", function(event) {  
-                            $(".chosenMedico").trigger('chosen:updated');                                                                           
+        document.querySelector(".chosenMedico").chosen().on("chosen:showing_dropdown", function(event) {  
+          document.querySelector(".chosenMedico").trigger('chosen:updated');                                                                           
                             });
-        
       </script>  
 </body>
 </html>

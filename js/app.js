@@ -1,4 +1,6 @@
-function change (especialidad, medico) {
+function change (especialidad, medico, horario) {
+    horario = document.getElementById(horario);
+    horario.value ="";
     especialidad = document.getElementById(especialidad);
     medico = document.getElementById(medico);
     medico.value ="";
