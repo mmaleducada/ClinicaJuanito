@@ -210,7 +210,6 @@ function eliminarTurno(id) {
 // Carga los datos y modo edicion
 
 function cargarEdicion(turnos) {
-  // const { Especialidad, Medico, fecha, Horario, solicitud, id } = turnos;
   console.log(turnos);
   // llenar los input
   Especialidad.value = turnos.Especialidad;
@@ -221,12 +220,7 @@ function cargarEdicion(turnos) {
 
   // Llenar el objeto
   turnoObj = turnos;
-  // turnoObj.Especialidad = Especialidad;
-  // turnoObj.Medico = Medico;
-  // turnoObj.fecha = fecha;
-  // turnoObj.Horario = Horario;
-  // turnoObj.solicitud = solicitud;
-  // turnoObj.id = id;
+
   // Cambiar el texto del boton
 
   solicitudTurnos.querySelector('button[type="submit"]').textContent =
