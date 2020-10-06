@@ -92,18 +92,18 @@ footer .columnas p {
   font-size: 13px;
 }
 
-/* p {
+.p-male {
   margin-top: 0;
   margin-bottom: 1rem;
 }
 
-p {
+.p-male {
   display: block;
   margin-block-start: 2rem;
   margin-block-end: 4rem;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-} */
+} 
 
 footer .final-footer {
   background: #00a8b3;

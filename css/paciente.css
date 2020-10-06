@@ -42,6 +42,11 @@ div {
     color: rgb(0, 0, 0);
     margin-top: 50px;
     padding: 20px;
+    border-color: #00a8b3 rgb(255, 255, 255);
+  border-width: 10px;
+  border-style: solid;
+  font-family: 'Montserrat', sans-serif;
+
 }
 
 .panel-m {
@@ -53,5 +58,19 @@ div {
 .titulo-medico {
     text-align: center;
     margin-top: 30px;
+}
+
+.estilo-turno {
+    border-color: #00a8b3 rgb(255, 255, 255);
+  border-width: 10px;
+  border-style: solid;
+  text-align: center;
+  word-spacing: 5px;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 10px;
+}
+
+.especialidad-estilo {
+    text-decoration: underline;
 }
 

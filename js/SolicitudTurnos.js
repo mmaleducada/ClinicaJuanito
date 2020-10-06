@@ -55,12 +55,12 @@ class IU {
     turno.forEach((turno) => {
       const { Especialidad, Medico, fecha, Horario, solicitud, id } = turno;
       const divTurno = document.createElement("div");
-      divTurno.classList.add("turno", "p-3");
+      divTurno.classList.add("turno", "p-3", "estilo-turno");
       divTurno.dataset.id = id;
 
       // Especialidad
-      const especialidadParrafo = document.createElement("h2");
-      especialidadParrafo.classList.add("card-title", "font-weight-bolder");
+      const especialidadParrafo = document.createElement("h3");
+      especialidadParrafo.classList.add("card-title", "font-weight-bolder", "especialidad-estilo");
       especialidadParrafo.textContent = Especialidad;
       // Medico
       const medicoParrafo = document.createElement("p");
