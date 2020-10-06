@@ -9,6 +9,7 @@
     />
     
     <link rel="stylesheet" href="./registro.css" />
+    <link rel="stylesheet" href="./css/estilos.css" />
     <!-- CDN Font awesome -->
     <!-- CSS only -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
@@ -16,6 +17,68 @@ integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ
     <title>formulario de registro</title>
     
   </head>
+  <header class="header">
+    <!--------------------------- NAVBAR------------------------->
+    <nav class="navbar mi-nav navbar-expand-lg">
+      <a class="navbar-brand" href="#">
+        <img
+          src="./imagenes/logo4.png"
+          alt="logo"
+          height="40px"
+          width="40px"
+          class="img-logo"
+        />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              ><i class="fas fa-clinic-medical mr-2"></i>Inicio
+              <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              ><i class="fas fa-comment-medical mr-2"></i>Contacto</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#"
+              id="navbarDropdownMenuLink"
+              role="button"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Trabaja con nosotros
+            </a>
+          </li>
+        </ul>
+      </div>
+      <a
+        id="button"
+        class="btn btn-info btnRegistro"
+        data-toggle="modal"
+        data-target="#exampleModal"
+        tabindex="-1"
+        aria-disabled="false"
+      >
+        <i class="fas fa-sign-in-alt mr-2"></i>
+        Ingresar/Registrarme
+      </a>
+    </nav>
   <!--inicio formulario de registro-->
   <body style="background-color: #ceebec;">
     <script type = "text/javascript" src="./js/app.js"></script>
@@ -28,22 +91,22 @@ integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ
           <hr class="bg-info">
           <p class="mb-0 pb-0">Ingresa tus datos para poder crear tu cuenta</p>
           <p class="text-danger small pt-0 mt-0">*todos los datos son obligatorios</p>
-          <form>
-
-            <div class="row form-group">
-              <label for="apellido" class="col-form-label col-md-4">Apellido:</label>
-              <div class="col-md-8">
-                <input type="text" name="apellido" value="" id="apellido" class="form-control"></input>
-              </div>
-            </div>
+          <form id="formulario">
 
           <div class="row form-group">
             <label for="nombre" class="col-form-label col-md-4">Nombre:</label>
             <div class="col-md-8">
               <input type="text" name="nombre" value="" id="nombre" class="form-control"></input>
             </div>
+            
           </div>
-          
+          <div class="row form-group">
+            <label for="apellido" class="col-form-label col-md-4">Apellido:</label>
+            <div class="col-md-8">
+              <input type="text" name="apellido" value="" id="apellido" class="form-control"></input>
+            </div>
+          </div>
+
           <div class="row form-group">
             <label for="email" class="col-form-label col-md-4">E-mail:</label>
             <div class="col-md-8">
@@ -54,7 +117,7 @@ integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ
           <div class="row form-group">
             <label for="contraseña" class="col-form-label col-md-4">Contraseña:</label> 
             <div class="col-md-8">
-              <input type="password" name="contraseña" value="" id="contraseña" class="form-control"></input>
+              <input type="password" name="contraseña" value="" id="contraseñaRegistro" class="form-control"></input>
               <small id="passwordHelpInline" class="text-muted">
                 La contraseña debe tener entre 8 y 20 caracteres
               </small>
@@ -126,7 +189,7 @@ integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ
             </div>
           </div>
 
-          <button type="submit" class="btn btn-info">Enviar</button>
+          <button type="submit" id="enviar" class="btn btn-info">Enviar</button>
           <br>
           <br>
           <p>Si ya tenes cuenta hace <a href="./index.html">click aca</a>   !!!</p>
@@ -137,7 +200,82 @@ integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ
     </div>
      <img src="./imagenes/cut-header.svg">
      
-      
+     <footer>
+      <div class="columnas">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <!--LOGO-->
+              <img
+                src="./imagenes/logo3.png"
+                alt="logo"
+                height="180px"
+                width="180px"
+              />
+            </div>
+            <div class="col-md-3">
+              <!--menu1-->
+              <ul class="links">
+                <h3 class="footer-h3">CLÍNICA JUANITO</h3>
+                <li class="footer-li">
+                  <a href="#" class="text-reset">Inicio</a>
+                </li>
+                <li class="footer-li">
+                  <a href="#" class="text-reset">Nuestra Empresa</a>
+                </li>
+                <li class="footer-li">
+                  <a href="#" class="text-reset">Novedades</a>
+                </li>
+                <li class="footer-li">
+                  <a href="#" class="text-reset">Contacto</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <!--menu2-->
+              <ul class="links">
+                <h3 class="footer-h3">SERVICIOS</h3>
+                <li class="footer-li">
+                  <a href="#" class="text-reset">Pacientes</a>
+                </li>
+                <li class="footer-li">
+                  <a href="#" class="text-reset">Profesionales</a>
+                </li>
+                <li class="footer-li">
+                  <a href="#" class="text-reset">Residencias</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <!--menu3-->
+              <ul class="links">
+                <h3 class="footer-h3">INFORMACIÓN ÚTIL</h3>
+                <li class="footer-li">
+                  <a href="#" class="text-reset">Turnos</a>
+                </li>
+                <li class="footer-li">
+                  <a href="#" class="text-reset">Preguntas Frecuentes</a>
+                </li>
+                <li class="footer-li">
+                  <a href="#" class="text-reset">Horarios de Atencion</a>
+                </li>
+                <li class="footer-li">
+                  <a href="#" class="text-reset">Trabaja con nosotros</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="final-footer py-3">
+        <div class="container">
+          <span>
+            &#169; Clinica Juanito | San Lorenzo 700 - San Miguel de Tucumán,
+            Tucumán. Argentina
+          </span>
+        </div>
+      </div>
+    </footer>
       
 
     
@@ -153,5 +291,6 @@ integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-  </body>
+<script src="./js/logueo.js"></script>
+</body>
 </html>
