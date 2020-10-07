@@ -59,7 +59,7 @@ class IU {
       divTurno.dataset.id = id;
 
       // Especialidad
-      const especialidadParrafo = document.createElement("h3");
+      const especialidadParrafo = document.createElement("h5");
       especialidadParrafo.classList.add("card-title", "font-weight-bolder", "especialidad-estilo");
       especialidadParrafo.textContent = Especialidad;
       // Medico
@@ -81,14 +81,14 @@ class IU {
 
       // Boton para eliminar el turno
       const btnEliminar = document.createElement("button");
-      btnEliminar.classList.add("btn", "btn-danger", "mr-2");
+      btnEliminar.classList.add("btn", "btn-danger", "mr-2", "btn-sm");
       btnEliminar.innerHTML = `Eliminar`;
       btnEliminar.onclick = () => eliminarTurno(id);
 
       // Boton de edicion de turno
 
       const btnEditar = document.createElement("button");
-      btnEditar.classList.add("btn", "btn-info");
+      btnEditar.classList.add("btn", "btn-info", "boton-editar", "btn-sm");
       btnEditar.innerHTML = `Editar`;
       btnEditar.onclick = () => cargarEdicion(turno);
 

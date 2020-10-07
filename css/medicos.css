@@ -1,4 +1,4 @@
-.calen {
+/*.calen {
     width: 100%;
   background-color: #12121f;
   color: #eee;
@@ -89,5 +89,19 @@
   
   .today {
     background-color: #167e56;
+  }*/
+
+  .columna-1 {
+    background-color: saddlebrown;
+    margin: 3px;
   }
-  
+
+  .columna-2 {
+    background-color: seagreen;
+    margin: 3px;
+  }
+
+  .columna-3 {
+    background-color: rgb(132, 0, 255);
+    margin: 3px;
+  }

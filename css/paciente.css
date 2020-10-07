@@ -35,6 +35,7 @@ div {
     color: rgb(0, 0, 0);
     margin-top: 50px;
     padding: 5px;  
+    
 }
 
 .solicitud-turnos {
@@ -68,9 +69,21 @@ div {
   word-spacing: 5px;
   font-family: 'Montserrat', sans-serif;
   margin-bottom: 10px;
+  font-size: 13px;
+  width: 100%;
+ 
 }
 
 .especialidad-estilo {
     text-decoration: underline;
+    font-size: 17px;
 }
 
+.boton-eliminar {
+    width: 50%;
+}
+
+.lista-turnos {
+    display: flex;
+    flex-direction: row;
+}
