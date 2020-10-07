@@ -14,7 +14,7 @@ const renderCalendar = () => {
   const prevLastDay = new Date(
     date.getFullYear(),
     date.getMonth(),
-    0
+    0 
   ).getDate();
 
   const firstDayIndex = date.getDay();

@@ -56,7 +56,7 @@ class IU {
       const { Especialidad, Medico, fecha, Horario, solicitud, id } = turno;
       const divTurno = document.createElement("div");
       divTurno.classList.add("turno", "p-3", "estilo-turno");
-      divTurno.dataset.id = id;
+      divTurno.dataset.id = id; 
 
       // Especialidad
       const especialidadParrafo = document.createElement("h5");
