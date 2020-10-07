@@ -35,6 +35,7 @@ div {
     color: rgb(0, 0, 0);
     margin-top: 50px;
     padding: 5px;  
+    
 }
 
 .solicitud-turnos {
@@ -42,6 +43,11 @@ div {
     color: rgb(0, 0, 0);
     margin-top: 50px;
     padding: 20px;
+    border-color: #00a8b3 rgb(255, 255, 255);
+  border-width: 10px;
+  border-style: solid;
+  font-family: 'Montserrat', sans-serif;
+
 }
 
 .panel-m {
@@ -50,3 +56,34 @@ div {
     padding: 5px; 
 }
 
+.titulo-medico {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.estilo-turno {
+    border-color: #00a8b3 rgb(255, 255, 255);
+  border-width: 10px;
+  border-style: solid;
+  text-align: center;
+  word-spacing: 5px;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 10px;
+  font-size: 13px;
+  width: 100%;
+ 
+}
+
+.especialidad-estilo {
+    text-decoration: underline;
+    font-size: 17px;
+}
+
+.boton-eliminar {
+    width: 50%;
+}
+
+.lista-turnos {
+    display: flex;
+    flex-direction: row;
+}
