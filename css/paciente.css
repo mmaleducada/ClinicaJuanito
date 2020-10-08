@@ -83,7 +83,3 @@ div {
     width: 50%;
 }
 
-.lista-turnos {
-    display: flex;
-    flex-direction: row;
-}
