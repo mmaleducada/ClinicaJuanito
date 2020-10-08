@@ -1,15 +1,17 @@
-const emailInput = document.querySelector("#emailInput");
-const passwordInput = document.querySelector("#passwordInput");
-const formularioLoguin = document.querySelector("#formularioLoguin");
+// const emailInput = document.querySelector("#emailInput");
+// const passwordInput = document.querySelector("#passwordInput");
+// const formularioLoguin = document.querySelector("#formularioLoguin");
 const btnTurnos = document.querySelector("#pacieneNone");
-const btnCerrarSesion = document.querySelector("#btnCerrarsesion");
-const btnIngresar = document.querySelector("#btnIngresar");
+// const btnCerrarSesion = document.querySelector("#btnCerrarsesion");
+// const btnIngresar = document.querySelector("#btnIngresar");
 let infoPacientes = JSON.parse(localStorage.getItem("pacientes"));
 
-formularioLoguin.addEventListener("submit", login);
-btnCerrarSesion.addEventListener("click", logout);
+formularioLoguin.addEventListener("submit", loginP);
+btnCerrarSesion.addEventListener("click", logoutP);
 
-function login(e) {
+// Pacientes
+
+function loginP(e) {
   e.preventDefault();
   console.log(infoPacientes);
   infoPacientes.forEach((paciente) => {
@@ -41,7 +43,7 @@ function checkLogin() {
 }
 checkLogin();
 
-function logout() {
+function logoutP() {
   console.log("entro logout");
   infoPacientes.forEach((paciente) => {
     paciente.logueado = false;

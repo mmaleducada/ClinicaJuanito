@@ -4,33 +4,33 @@ const formularioLoguin = document.querySelector("#formularioLoguin");
 const btnMireTurno = document.querySelector("#medicoNone");
 const btnCerrarSesion = document.querySelector("#btnCerrarsesion");
 const btnIngresar = document.querySelector("#btnIngresar");
-let infoPacientes = JSON.parse(localStorage.getItem("medico"));
+let infoMedicos = JSON.parse(localStorage.getItem("medico"));
 
-formularioLoguin.addEventListener("submit", login);
-btnCerrarSesion.addEventListener("click", logout);
+formularioLoguin.addEventListener("submit", loginM);
+btnCerrarSesion.addEventListener("click", logoutM);
 
-function login(e) {
+function loginM(e) {
   e.preventDefault();
-  console.log(infoPacientes);
-  infoPacientes.forEach((paciente) => {
+  console.log(infoMedicos);
+  infoMedicos.forEach((medicos) => {
     if (
-      paciente.contraseña === passwordInput.value &&
-      paciente.email === emailInput.value
+      medicos.contraseña === passwordInput.value &&
+      medicos.email === emailInput.value
     ) {
-      paciente.logueado = true;
-      setLocal();
+      medicos.logueado = true;
+      setLocalM();
       location.reload();
     } else {
       console.log("incorrecto");
     }
   });
 }
-function setLocal() {
-  localStorage.setItem("medico", JSON.stringify(infoPacientes));
+function setLocalM() {
+  localStorage.setItem("medico", JSON.stringify(infoMedicos));
 }
-function checkLogin() {
-  infoPacientes.forEach((paciente) => {
-    if (paciente.logueado) {
+function checkLoginM() {
+  infoMedicos.forEach((medico) => {
+    if (medico.logueado) {
       btnMireTurno.classList.remove("d-none");
       btnIngresar.classList.add("d-none");
       btnCerrarSesion.classList.remove("d-none");
@@ -39,13 +39,13 @@ function checkLogin() {
     }
   });
 }
-checkLogin();
+checkLoginM();
 
-function logout() {
+function logoutM() {
   console.log("entro logout");
-  infoPacientes.forEach((paciente) => {
-    paciente.logueado = false;
-    setLocal();
+  infoMedicos.forEach((medicos) => {
+    medicos.logueado = false;
+    setLocalM();
     location.reload();
   });
 }
