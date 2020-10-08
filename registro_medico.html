@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap-4.5.2-dist/bootstrap-4.5.2-dist/cssbootstrap/bootstrap.min.css"/>
+    <!-- <link rel="stylesheet" href="./registro.css" /> -->
+    <link rel="stylesheet" href="./css/estilos.css" />
+    <!-- CDN Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+    <!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>formulario de registro</title>
+  </head>
+  <body style="background-color: #ceebec;">
+    <header class="header">
+      <!--------------------------- NAVBAR------------------------->
+      <nav class="navbar mi-nav navbar-expand-lg">
+        <a class="navbar-brand" href="#">
+          <img
+            src="./imagenes/logo4.png"
+            alt="logo"
+            height="40px"
+            width="40px"
+            class="img-logo"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="./index.html">
+                <i class="fas fa-clinic-medical mr-2"></i>
+                Inicio
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fas fa-comment-medical mr-2"></i>
+                Contacto
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="./registro_medico.html"
+                id="navbarDropdownMenuLink"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Trabaja con nosotros
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="./paciente.html"
+                id="pacieneNone"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Solicitud de turnos
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="./medicos.html"
+                id="MedicoNone"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Mire sus turnos
+              </a>
+            </li>
+          </ul>
+        </div>
+        <a
+          id="button"
+          class="btn btn-info btnRegistro"
+          data-toggle="modal"
+          data-target="#exampleModal"
+          tabindex="-1"
+          aria-disabled="false"
+        >
+          <i class="fas fa-sign-in-alt mr-2"></i>
+          Ingresar/Registrarme
+        </a>
+      </nav>
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content logueo-index">
+            <div class="modal-header">
+              <h5 class="modal-title inicio-logueo" id="exampleModalLabel">
+                Iniciar sesión
+              </h5>
+              <button
+                type="button"
+                class="close exis-logueo"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <!-- inicio del formulario de logueo -->
+              <form id="formularioLoguin">
+                <div class="form-group">
+                  <label for="exampleInputEmail1"
+                    >Ingrese su casilla de E-mail</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="emailInput"
+                    aria-describedby="emailHelp"
+                    placeholder="ejemplo@ejemplo.com"
+                  />
+                  <small id="emailHelp" class="form-text text-muted"></small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Contraseña</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="passwordInput"
+                  />
+                  <small id="passwordHelpInline" class="text-muted">
+                    Must be 8-20 characters long.
+                  </small>
+                </div>
+                <div class="form-group form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="exampleCheck1"
+                  />
+                  <label
+                    class="form-check-label recordar-logueo"
+                    for="exampleCheck1"
+                    >Recordar contraseña</label
+                  >
+                </div>
+                <button
+                  type="submit"
+                  class="btn btn-outline-light btn-sm btn-block"
+                >
+                  Ingresar
+                </button>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <a href="#">¿Olvidaste tu contraseña?</a>
+              <p class="p-logueo">-</p>
+              <a href="./registro-paciente.html">Registrarse</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- fin del formulario de logueo -->
+
+     
+    </header>
+
+  <div class="container" id="formulario">
+      <div class="row justify-content-center mt-5 pt-5" >
+        <div class="col-md-7">
+          <h1 class="display-6">Trabajá con nosotros</h1>
+          <hr class="bg-info">
+          <p class="mb-0 pb-0">Registro</p>
+          <p class="text-danger small pt-0 mt-0">*todos los datos son obligatorios</p>
+          <form class="needs-validation" novalidate>
+            <div class="row form-group">
+              <label for="apellido" class="col-form-label col-md-4">Apellido:</label>
+              <div class="col-md-8">
+                <input type="text" class="form-control" name="apellido" value="" id="apellido" required>
+                <div class="valid-feedback">
+                  ¡Ok válido!
+                </div>
+              </div>
+            </div>
+          <div class="row form-group">
+            <label for="nombre" class="col-form-label col-md-4">Nombre:</label>
+            <div class="col-md-8">
+              <input type="text" class="form-control" name="nombre" value="" id="nombre" required>
+                <div class="valid-feedback">
+                  ¡Ok válido!
+                </div>
+            </div>
+          </div>          
+          <div class="row form-group">
+            <label for="usuario" class="col-form-label col-md-4">Usuario:</label>
+            <div class="col-md-8">
+              <input type="text" class="form-control" name="usuario" value="" id="usuario" required>
+                <div class="valid-feedback">
+                  ¡Ok válido!
+                </div>
+            </div>
+          </div>
+          <div class="row form-group">
+            <label for="email" class="col-form-label col-md-4">E-mail:</label>
+            <div class="col-md-8">
+              <input type="email" name="email" value="" id="email" class="form-control" placeholder="ejemplo@ejemplo.com" required></input>
+              <div class="valid-feedback">
+                ¡Ok válido!
+              </div>
+            </div>
+          </div>
+          <div class="row form-group">
+            <label for="contraseña" class="col-form-label col-md-4">Contraseña:</label> 
+            <div class="col-md-8">
+              <input type="password" name="contraseña" value="" id="contraseña" class="form-control" required></input>
+              <div class="valid-feedback">
+                ¡Ok válido!
+              </div>
+            </div>
+          </div>
+          <div class="row form-group">
+            <label for="genero" class="col-form-label col-md-4">Sexo:</label>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" required>
+              <label class="form-check-label" for="inlineRadio1">Mujer</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" required>
+              <label class="form-check-label" for="inlineRadio2">Hombre</label>
+            </div>
+          </div>
+          <div class="row form-group">
+            <label for="inputTelephoneNumber" class="col-form-label col-md-4">Telefono de Contacto:</label>
+            <div class="col-md-8">
+            <input type="text" class="form-control" id="inputTelephoneNumber" placeholder="Ej: 11 6090 0400 (cód de área + núm telefónico)" required>
+            <div class="valid-feedback">
+              ¡Ok válido!
+            </div>
+          </div>
+          </div>
+          <div class="row form-group">
+            <label for="inputAddress2" class="col-form-label col-md-4">Domicilio:</label>
+            <div class="col-md-8">
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Calle, Numero, Dpto, Piso" required>
+            <div class="valid-feedback">
+              ¡Ok válido!
+            </div>
+          </div>
+        </div>
+          <div class="form-row">
+            <div class="col-md-3 mb-3">
+              <label for="validationTooltip01">Especialidad:</label>
+              <select class="custom-select" id="validationTooltip01" required>
+                <option selected disabled value="">Seleccione...</option>
+                <option>Cardiologia</option>
+                <option>Traumatologia</option>
+                <option>Neurologia</option>
+                <option>Pediatria</option>
+                <option>Oftalmologia</option>
+              </select>              
+              <div class="invalid-tooltip">
+                Por favor seleccione una Especialidad.
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="validationTooltip02">Desde:</label>
+              <select class="custom-select" id="validationTooltip02" required>
+                <option selected disabled value="">Seleccione...</option>
+                <option>09:00</option>
+                <option>09:30</option>
+                <option>10:00</option>
+                <option>10:30</option>
+                <option>11:00</option>
+                <option>11:30</option>
+                <option>12:00</option>
+              </select>
+              <div class="invalid-tooltip">
+                Por favor seleccione un horario de Atencion.
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="validationTooltip03">Hasta:</label>
+              <select class="custom-select" id="validationTooltip03" required>
+                <option selected disabled value="">Seleccione...</option>
+                <option>09:30</option>
+                <option>10:00</option>
+                <option>10:30</option>
+                <option>11:00</option>
+                <option>11:30</option>
+                <option>12:00</option>
+                <option>12:30</option>
+              </select>
+              <div class="invalid-tooltip">
+                Por favor seleccione un horario de Atencion.
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="validationTooltip04">Nº de Matricula:</label>
+              <input type="text" class="form-control" id="validationTooltip04" required>
+              <div class="invalid-tooltip">
+                Por favor ingrese su Numero de Matricula Profesional.
+              </div>
+            </div>
+          </div>
+          <div class="row form-group">
+            <label for="mensaje" class="col-form-label col-md-4">Informacion Adicional:</label>
+            <div class="col-md-8">
+              <textarea rows="3" name="contraseña" value="" id="contraseña" class="form-control"></textarea>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-dark btn-sm btn-block">Enviar</button>
+        </form>
+        </div>
+      </div>
+    </div>
+     <img src="./imagenes/cut-header.svg" alt="" />
+      <!--INICIO FOOTER-->
+    <footer>
+      <div class="columnas">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <!--LOGO-->
+              <img src="./imagenes/logo3.png" alt="logo" height="180px" width="180px"/>
+            </div>
+            <div class="col-md-3">
+              <!--menu1-->
+              <ul class="links">
+                <h3 class="footer-h3">CLÍNICA JUANITO</h3>
+                <li class="footer-li">
+                  <a href="#" class="text-reset">Inicio</a>
+                </li>
+                <li class="footer-li">
+                  <a href="#" class="text-reset">Nuestra Empresa</a>
+                </li>
+                <li class="footer-li">
+                  <a href="#" class="text-reset">Novedades</a>
+                </li>
+                <li class="footer-li">
+                  <a href="#" class="text-reset">Contacto</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <!--menu2-->
+              <ul class="links">
+                <h3 class="footer-h3">SERVICIOS</h3>
+                <li class="footer-li">
+                  <a href="#" class="text-reset">Pacientes</a>
+                </li>
+                <li class="footer-li">
+                  <a href="#" class="text-reset">Profesionales</a>
+                </li>
+                <li class="footer-li">
+                  <a href="#" class="text-reset">Residencias</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <!--menu3-->
+              <ul class="links">
+                <h3 class="footer-h3">INFORMACIÓN ÚTIL</h3>
+                <li class="footer-li">
+                  <a href="#" class="text-reset">Turnos</a>
+                </li>
+                <li class="footer-li">
+                  <a href="#" class="text-reset">Preguntas Frecuentes</a>
+                </li>
+                <li class="footer-li">
+                  <a href="#" class="text-reset">Horarios de Atencion</a>
+                </li>
+                <li class="footer-li">
+                  <a href="#" class="text-reset">Trabaja con nosotros</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="final-footer py-3">
+        <div class="container">
+          <span>
+            &#169; Clinica Juanito | San Lorenzo 700 - San Miguel de Tucumán,
+            Tucumán. Argentina
+          </span>
+        </div>
+      </div>
+    </footer>
+     <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+      </script>
+      <!-- fin del formulario de reigistro -->
+      <script type = "text/javascript" src="./js/app.js"></script>
+      <script type="tex/javascript" src="./js/chosen.jquery.js"></script>
+      <script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>

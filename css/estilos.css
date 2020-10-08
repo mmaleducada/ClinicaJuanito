@@ -1,8 +1,13 @@
+html {
+  scroll-behavior: smooth;
+}
+
 /* NAVBAR */
 .mi-nav {
-  padding: 0px;
+  padding: 0px !important;
   background-color: #00a8b3;
 }
+
 .mi-nav .navbar-brand {
   color: white;
 }
@@ -10,6 +15,7 @@
   color: white;
   padding: 15px 0;
 }
+
 .mi-nav .nav-link:hover {
   background-color: #0c7e86e1;
   color: white;
@@ -80,11 +86,11 @@ footer .columnas ul.links li a {
   font-size: 14px;
 }
 
-a {
+/* a {
   color: #2dc3cc;
   text-decoration: none;
   background-color: transparent;
-}
+} */
 
 footer .columnas p {
   text-align: left;
@@ -92,18 +98,18 @@ footer .columnas p {
   font-size: 13px;
 }
 
-/* p {
+.p-male {
   margin-top: 0;
   margin-bottom: 1rem;
 }
 
-p {
+.p-male {
   display: block;
   margin-block-start: 2rem;
   margin-block-end: 4rem;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-} */
+}
 
 footer .final-footer {
   background: #00a8b3;
@@ -189,4 +195,20 @@ footer .final-footer {
 
 .transform-turn {
   transform: rotate(0.5turn);
+}
+
+.logueo-index {
+  background-color: rgb(0, 35, 61);
+}
+
+.inicio-logueo {
+  color: #fff;
+}
+
+.recordar-logueo {
+  color: #fff;
+}
+
+.exis-logueo {
+  color: #fff;
 }

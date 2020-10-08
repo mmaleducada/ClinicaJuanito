@@ -55,12 +55,12 @@ class IU {
     turno.forEach((turno) => {
       const { Especialidad, Medico, fecha, Horario, solicitud, id } = turno;
       const divTurno = document.createElement("div");
-      divTurno.classList.add("turno", "p-3");
-      divTurno.dataset.id = id;
+      divTurno.classList.add("turno", "p-3", "estilo-turno");
+      divTurno.dataset.id = id; 
 
       // Especialidad
-      const especialidadParrafo = document.createElement("h2");
-      especialidadParrafo.classList.add("card-title", "font-weight-bolder");
+      const especialidadParrafo = document.createElement("h5");
+      especialidadParrafo.classList.add("card-title", "font-weight-bolder", "especialidad-estilo");
       especialidadParrafo.textContent = Especialidad;
       // Medico
       const medicoParrafo = document.createElement("p");
@@ -81,14 +81,14 @@ class IU {
 
       // Boton para eliminar el turno
       const btnEliminar = document.createElement("button");
-      btnEliminar.classList.add("btn", "btn-danger", "mr-2");
+      btnEliminar.classList.add("btn", "btn-danger", "mr-2", "btn-sm");
       btnEliminar.innerHTML = `Eliminar`;
       btnEliminar.onclick = () => eliminarTurno(id);
 
       // Boton de edicion de turno
 
       const btnEditar = document.createElement("button");
-      btnEditar.classList.add("btn", "btn-info");
+      btnEditar.classList.add("btn", "btn-info", "boton-editar", "btn-sm");
       btnEditar.innerHTML = `Editar`;
       btnEditar.onclick = () => cargarEdicion(turno);
 
