@@ -3,19 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-    rel="stylesheet"
-    href="./css/bootstrap-4.5.2-dist/bootstrap-4.5.2-dist/cssbootstrap/bootstrap.min.css"
-  />
-  <link rel="stylesheet" href="./css/estilos.css" />
+    <link rel="stylesheet" href="./css/bootstrap-4.5.2-dist/bootstrap-4.5.2-dist/cssbootstrap/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./registro.css" />
+    <link rel="stylesheet" href="./css/estilos.css" />
     <!-- CDN Font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
-    <link rel="stylesheet" href="./registro.css" />
     <!-- CSS only -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
 integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <title>formulario de registro</title>
+<title>formulario de registro</title>
   </head>
+  <body style="background-color: #ceebec;">
   <header class="header">
     <!--------------------------- NAVBAR------------------------->
     <nav class="navbar mi-nav navbar-expand-lg">
@@ -85,28 +83,14 @@ integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ
     <!-- fin del formulario de logueo -->
   </header>
   <!--inicio formulario de registro-->
-  <body style="background-color: #ceebec;">
-    <script type = "text/javascript" src="./js/app.js"></script>
-  <script type="tex/javascript" src="./js/chosen.jquery.js"></script>
-  <script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
-    <div class="container">
-      <div class="row justify-content-center mt-5 pt-5 " >
-        <div class="col-md-7">
-          <h1 class="display-4">Formulario de Registro</h1>
-          <hr class="bg-info">
-          <p class="mb-0 pb-0">Ingresa tus datos para poder crear tu cuenta</p>
-          <p class="text-danger small pt-0 mt-0">*todos los datos son obligatorios</p>
-          <form id="formulario">
-            <div class="row form-group">
-              <label for="nombre" class="col-form-label col-md-4">Nombre:</label>
-              <div class="col-md-8">
-                <input type="text" class="form-control" name="nombre" value="" id="nombre" required>
-                  <div class="valid-feedback">
-                    ¡Ok válido!
-                  </div>
-              </div>
-            </div> 
-          </div>
+  <div class="container" id="formulario">
+    <div class="row justify-content-center mt-5 pt-5" >
+      <div class="col-md-7">
+        <h1 class="display-6">¡Crea tu cuenta!</h1>
+        <hr class="bg-info">
+        <p class="mb-0 pb-0">Registro</p>
+        <p class="text-danger small pt-0 mt-0">*todos los datos son obligatorios</p>
+        <form class="needs-validation" novalidate>
           <div class="row form-group">
             <label for="apellido" class="col-form-label col-md-4">Apellido:</label>
             <div class="col-md-8">
@@ -115,16 +99,25 @@ integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ
                 ¡Ok válido!
               </div>
             </div>
-          </div>
+          </div> 
           <div class="row form-group">
-            <label for="email" class="col-form-label col-md-4">E-mail:</label>
+            <label for="nombre" class="col-form-label col-md-4">Nombre:</label>
             <div class="col-md-8">
-              <input type="email" name="email" value="" id="email" class="form-control" placeholder="ejemplo@ejemplo.com" required></input>
-              <div class="valid-feedback">
-                ¡Ok válido!
-              </div>
+              <input type="text" class="form-control" name="nombre" value="" id="nombre" required>
+                <div class="valid-feedback">
+                  ¡Ok válido!
+                </div>
             </div>
-          </div>       
+          </div>          
+          <div class="row form-group">
+            <label for="usuario" class="col-form-label col-md-4">Usuario:</label>
+            <div class="col-md-8">
+              <input type="text" class="form-control" name="usuario" value="" id="usuario" required>
+                <div class="valid-feedback">
+                  ¡Ok válido!
+                </div>
+            </div>
+          </div>
           <div class="row form-group">
             <label for="contraseña" class="col-form-label col-md-4">Contraseña:</label> 
             <div class="col-md-8">
@@ -148,18 +141,12 @@ integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ
           <div class="row form-group">
             <label for="inputTelephoneNumber" class="col-form-label col-md-4">Telefono de Contacto:</label>
             <div class="col-md-8">
-            <input type="text" class="form-control" id="inputTelephoneNumber" placeholder="Ej: 11 6090 0400 (cód de área + núm telefónico)">
-          </div>
-          </div>         
-          <div class="row form-group">
-            <label for="inputAddress2" class="col-form-label col-md-4">Domicilio:</label>
-            <div class="col-md-8">
-            <input type="text" class="form-control" id="inputAddress2" placeholder="Calle, Numero, Dpto, Piso" required>
+            <input type="text" class="form-control" id="inputTelephoneNumber" placeholder="Ej: 11 6090 0400 (cód de área + núm telefónico)" required>
             <div class="valid-feedback">
               ¡Ok válido!
             </div>
           </div>
-        </div>
+          </div>
           <div class="form-row">
             <div class="col-md-6 mb-3">
               <label for="validationTooltip03">Localidad:</label>
@@ -277,6 +264,9 @@ integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ
       </div>
     </footer>
       <!-- fin del formulario de reigistro -->
+      <script type = "text/javascript" src="./js/app.js"></script>
+      <script type="tex/javascript" src="./js/chosen.jquery.js"></script>
+      <script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
       <script>
         // Example starter JavaScript for disabling form submissions if there are invalid fields
         (function() {
