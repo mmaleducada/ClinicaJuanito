@@ -1,10 +1,10 @@
 const emailInput = document.querySelector("#emailInput");
 const passwordInput = document.querySelector("#passwordInput");
 const formularioLoguin = document.querySelector("#formularioLoguin");
-const btnTurnos = document.querySelector("#pacieneNone");
+const btnMireTurno = document.querySelector("#medicoNone");
 const btnCerrarSesion = document.querySelector("#btnCerrarsesion");
 const btnIngresar = document.querySelector("#btnIngresar");
-let infoPacientes = JSON.parse(localStorage.getItem("pacientes"));
+let infoPacientes = JSON.parse(localStorage.getItem("medico"));
 
 formularioLoguin.addEventListener("submit", login);
 btnCerrarSesion.addEventListener("click", logout);
@@ -26,12 +26,12 @@ function login(e) {
   });
 }
 function setLocal() {
-  localStorage.setItem("pacientes", JSON.stringify(infoPacientes));
+  localStorage.setItem("medico", JSON.stringify(infoPacientes));
 }
 function checkLogin() {
   infoPacientes.forEach((paciente) => {
     if (paciente.logueado) {
-      btnTurnos.classList.remove("d-none");
+      btnMireTurno.classList.remove("d-none");
       btnIngresar.classList.add("d-none");
       btnCerrarSesion.classList.remove("d-none");
     } else {

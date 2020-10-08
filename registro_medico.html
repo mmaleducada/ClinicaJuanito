@@ -66,7 +66,7 @@ integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ
             </li>
             <li class="nav-item">
               <a
-                class="nav-link"
+                class="nav-link d-none"
                 href="./paciente.html"
                 id="pacieneNone"
                 role="button"
@@ -78,7 +78,7 @@ integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ
             </li>
             <li class="nav-item">
               <a
-                class="nav-link"
+                class="nav-link d-none"
                 href="./medicos.html"
                 id="MedicoNone"
                 role="button"
@@ -185,6 +185,10 @@ integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ
      
     </header>
 
+
+
+    <!--inicio formulario de registro-->
+
   <div class="container" id="formulario">
       <div class="row justify-content-center mt-5 pt-5" >
         <div class="col-md-7">
@@ -211,7 +215,7 @@ integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ
                 </div>
             </div>
           </div>          
-          <div class="row form-group">
+          <!-- <div class="row form-group">
             <label for="usuario" class="col-form-label col-md-4">Usuario:</label>
             <div class="col-md-8">
               <input type="text" class="form-control" name="usuario" value="" id="usuario" required>
@@ -219,7 +223,7 @@ integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ
                   ¡Ok válido!
                 </div>
             </div>
-          </div>
+          </div> -->
           <div class="row form-group">
             <label for="email" class="col-form-label col-md-4">E-mail:</label>
             <div class="col-md-8">
@@ -325,7 +329,7 @@ integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ
           <div class="row form-group">
             <label for="mensaje" class="col-form-label col-md-4">Informacion Adicional:</label>
             <div class="col-md-8">
-              <textarea rows="3" name="contraseña" value="" id="contraseña" class="form-control"></textarea>
+              <textarea rows="3" name="textarea" value="" id="textarea" class="form-control"></textarea>
             </div>
           </div>
 
@@ -428,6 +432,7 @@ integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ
       })();
       </script>
       <!-- fin del formulario de reigistro -->
+      <script src="./js/registroMedico.js"></script>
       <script type = "text/javascript" src="./js/app.js"></script>
       <script type="tex/javascript" src="./js/chosen.jquery.js"></script>
       <script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>

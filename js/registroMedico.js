@@ -33,7 +33,7 @@ function datosUser(e) {
 }
 function submitUser(e) {
   e.preventDefault();
-  pacientes = JSON.parse(localStorage.getItem("pacientes"));
+  pacientes = JSON.parse(localStorage.getItem("medico"));
   if (pacientes == null) {
     pacientes = [];
   }
@@ -42,7 +42,7 @@ function submitUser(e) {
 
   const s = JSON.stringify(pacientes);
   console.log(s);
-  localStorage.setItem("pacientes", JSON.stringify(pacientes));
+  localStorage.setItem("medico", JSON.stringify(pacientes));
 
   formulario.reset();
 }
