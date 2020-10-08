@@ -64,6 +64,30 @@
                 Trabaja con nosotros
               </a>
             </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                id="pacieneNone"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Solicitud de turnos
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                id="MedicoNone"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Mire sus turnos
+              </a>
+            </li>
           </ul>
         </div>
         <a
@@ -102,7 +126,7 @@
             </div>
             <div class="modal-body">
               <!-- inicio del formulario de logueo -->
-              <form>
+              <form id="formularioLoguin">
                 <div class="form-group">
                   <label for="exampleInputEmail1"
                     >Ingrese su casilla de E-mail</label
@@ -110,7 +134,7 @@
                   <input
                     type="email"
                     class="form-control"
-                    id="exampleInputEmail1"
+                    id="emailInput"
                     aria-describedby="emailHelp"
                     placeholder="ejemplo@ejemplo.com"
                   />
@@ -121,7 +145,7 @@
                   <input
                     type="password"
                     class="form-control"
-                    id="exampleInputPassword1"
+                    id="passwordInput"
                   />
                   <small id="passwordHelpInline" class="text-muted">
                     Must be 8-20 characters long.
@@ -469,7 +493,7 @@
         </div>
       </div>
     </footer>
-
+    <script src="./js/loginPaciente.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
